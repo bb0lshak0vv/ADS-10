@@ -25,7 +25,7 @@ class Tree {
             insert(temp, otherChars);
         }
     }
-    void findPermutaions(Node* root, std::vector<char> vect) {
+    void findPermutations(Node* root, std::vector<char> vect) {
          if (!root->isRoot)
             vect.push_back(root->value);
          if (root->ptrs.empty()) {
