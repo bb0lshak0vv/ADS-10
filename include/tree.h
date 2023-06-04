@@ -20,7 +20,8 @@ class Tree {
             temp->value = c;
             root->ptrs.push_back(temp);
             std::vector<char> otherChars(vect);
-            otherChars.erase(std::find(otherChars.begin(), otherChars.end(), c));
+            otherChars.erase(std::find(otherChars.begin(), \
+                otherChars.end(), c));
             insert(temp, otherChars);
         }
     }
